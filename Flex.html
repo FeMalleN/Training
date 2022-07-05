@@ -34,17 +34,23 @@
 
 <wrapper>
   <div class="block__container">
-    <div class="item-1">1</div>
-    <div class="item-2">2</div>
-    <div class="item-3">3</div>
-    <div class="item-4">4</div>
-    <div class="item-5">5</div>
-    <div class="item-6">6</div>
-    <div class="item-7">7</div>
-    <div class="item-8">8</div>
-    <div class="item-9">9</div>
+    <div class="flex_item item-1" onclick="getRandomColor('item-1')">1</div>
+    <div class="flex_item item-2" onclick="getRandomColor('item-2')">2</div>
+    <div class="flex_item item-3" onclick="getRandomColor('item-3')">3</div>
+    <div class="flex_item item-4" onclick="getRandomColor('item-4')">4</div>
+    <div class="flex_item item-5" onclick="getRandomColor('item-5')">5</div>
+    <div class="flex_item item-6" onclick="getRandomColor('item-6')">6</div>
+    <div class="flex_item item-7" onclick="getRandomColor('item-7')">7</div>
+    <div class="flex_item item-8" onclick="getRandomColor('item-8')">8</div>
+    <div class="flex_item item-9" onclick="getRandomColor('item-9')">9</div>
   </div>
-
 </wrapper>
+<div class="sizes">
+  <input type="number" name ="width" value="0" class="newWidth">
+  <button onclick="setWidth()">width</button>
+
+  <input type="number" name ="height" value="0" class="newHeight">
+  <button onclick="setHeight()">height</button>
+</div>
 </body>
 </html>
