@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <title>Flex</title>
   <link rel="stylesheet" href="styles/flexstyle.css">
+  <script src="scripts/script.js"></script>
 </head>
 <body>
-<button>
-  without flex
-</button>
+<div class="buttons_block">
+  <div class="display_block">Display:
+    <button onclick="withoutFlex()">
+      without flex (default)
+    </button>
+    <button onclick="withFlex()">flex</button>
+    <button onclick="inlineFlex()">inline-flex</button>
+  </div>
+  <div class="direction_block">
+    Direction:
+    <button onclick="row()">
+      row (default)
+    </button>
+    <button onclick="rowRev()">
+      row-reverse
+    </button>
+    <button onclick="column()">
+      column (default)
+    </button>
+    <button onclick="columnRev()">
+      column-reverse
+    </button>
+  </div>
+</div>
+
 <wrapper>
   <div class="block__container">
     <div class="item-1">1</div>
