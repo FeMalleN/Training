@@ -1,0 +1,37 @@
+@import url(normalize.css);
+
+.block__container{
+    border: 5px solid firebrick;
+ }
+
+.block__container *{
+    border: 1px solid blue;
+}
+.item-1{
+background-color: darkslateblue;
+}
+.item-2{
+    background-color: yellowgreen;
+}
+.item-3{
+    background-color: antiquewhite;
+}
+.item-4{
+    background-color: cyan;
+}
+.item-5{
+    background-color: gold;
+}
+.item-6{
+    background-color: darkgray;
+}
+.item-7{
+    background-color: darkorange;
+}
+.item-8{
+    background-color: plum;
+}
+.item-9{
+    background-color: lightseagreen;
+}
+
