@@ -1,3 +1,4 @@
+//displays
 function withoutFlex(){
 document.getElementsByClassName('block__container')[0].style.display='block'
 }
@@ -7,6 +8,8 @@ function withFlex(){
 function inlineFlex(){
     document.getElementsByClassName('block__container')[0].style.display='inline-flex'
 }
+
+//directions
 function row() {
     document.getElementsByClassName('block__container')[0].style.flexDirection='row'
 }
@@ -21,8 +24,20 @@ function column(){
 function columnRev(){
     document.getElementsByClassName('block__container')[0].style.flexDirection='column-reverse'
 }
-
-//Sizes
+// wraps
+function wrp(){
+    document.getElementsByClassName('block__container')[0].style.flexWrap="wrap"
+    console.log("wrp")
+}
+function nowrp(){
+    document.getElementsByClassName('block__container')[0].style.flexWrap='nowrap'
+    console.log("nowrp")
+}
+function wrp_reverse(){
+    document.getElementsByClassName('block__container')[0].style.flexWrap='wrap-reverse'
+    console.log("wrp-reverse")
+}
+//Sizes and colours
 function setWidth(){
     let newWidth=document.getElementsByClassName("newWidth")[0].value
     let elements=  document.getElementsByClassName('flex_item')
@@ -45,6 +60,6 @@ function getRandomColor(i) {
     for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
-     document.getElementsByClassName(i)[0].style.backgroundColor=color
+    document.getElementsByClassName(i)[0].style.backgroundColor=color
     console.log("set color "+ color+" for "+ i)
  }

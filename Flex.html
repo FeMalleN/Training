@@ -30,9 +30,15 @@
       column-reverse
     </button>
   </div>
+  <div class="wrap_block">
+    Wrap:
+    <button onclick="nowrp()">nowrap (default)</button>
+    <button onclick="wrp()">wrap</button>
+    <button onclick="wrp_reverse()">wrap-reverse</button>
+  </div>
 </div>
 
-<wrapper>
+<div class="wrap">
   <div class="block__container">
     <div class="flex_item item-1" onclick="getRandomColor('item-1')">1</div>
     <div class="flex_item item-2" onclick="getRandomColor('item-2')">2</div>
@@ -44,13 +50,16 @@
     <div class="flex_item item-8" onclick="getRandomColor('item-8')">8</div>
     <div class="flex_item item-9" onclick="getRandomColor('item-9')">9</div>
   </div>
-</wrapper>
+</div>
 <div class="sizes">
-  <input type="number" name ="width" value="0" class="newWidth">
-  <button onclick="setWidth()">width</button>
-
+  <label>width
+    <input type="number" name ="width" value="0" class="newWidth">
+    <button onclick="setWidth()">set width</button>
+  </label>
+  <label> height
   <input type="number" name ="height" value="0" class="newHeight">
-  <button onclick="setHeight()">height</button>
+  <button onclick="setHeight()">set height</button>
+  </label>
 </div>
 </body>
 </html>

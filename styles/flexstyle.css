@@ -1,10 +1,12 @@
 @import "normalize.css";
 
 .block__container{
+    margin:10px 0 10px 0;
     border: 5px solid firebrick;
-
  }
-
+.buttons_block *{
+    padding: 5px;
+}
 .block__container *{
     border: 1px solid blue;
 }
