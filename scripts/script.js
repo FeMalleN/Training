@@ -53,7 +53,6 @@ function setHeight(){
     let elements=  document.getElementsByClassName('flex_item')
     let select=document.getElementById('height_type')
     let type=select.options[select.selectedIndex].label
-    console.log(type)
     for (let i = 0; i < elements.length; i++) {
         elements[i].style.height=newHeight+type
     }
