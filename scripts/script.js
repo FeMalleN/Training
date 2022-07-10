@@ -41,16 +41,21 @@ function wrp_reverse(){
 function setWidth(){
     let newWidth=document.getElementsByClassName("newWidth")[0].value
     let elements=  document.getElementsByClassName('flex_item')
+    let select=document.getElementById('width_type')
+    let type=select.options[select.selectedIndex].label
     for (let i = 0; i < elements.length; i++) {
-    elements[i].style.width=newWidth+'px'
+    elements[i].style.width=newWidth+type
     }
 }
 
 function setHeight(){
     let newHeight=document.getElementsByClassName("newHeight")[0].value
     let elements=  document.getElementsByClassName('flex_item')
+    let select=document.getElementById('height_type')
+    let type=select.options[select.selectedIndex].label
+    console.log(type)
     for (let i = 0; i < elements.length; i++) {
-        elements[i].style.height=newHeight+'px'
+        elements[i].style.height=newHeight+type
     }
 }
 

@@ -52,14 +52,42 @@
   </div>
 </div>
 <div class="sizes">
-  <label>width
-    <input type="number" name ="width" value="0" class="newWidth">
-    <button onclick="setWidth()">set width</button>
+  <label>Width
+    <input type="number" name="width" value="0" class="newWidth">
+      <select id="width_type" name="width_type" >
+        <option value="px">px</option>
+        <option value="%">%</option>
+        <option value="ch">ch</option>
+        <option value="cm">cm</option>
+        <option value="em">em</option>
+        <option value="ex">ex</option>
+        <option value="gd">gd</option>
+        <option value="mm">mm</option>
+        <option value="pt">pt</option>
+        <option value="rem">rem</option>
+        <option value="vh">vh</option>
+      </select>
+      <button onclick="setWidth()">set width</button>
   </label>
-  <label> height
+
+  <label> Height
   <input type="number" name ="height" value="0" class="newHeight">
-  <button onclick="setHeight()">set height</button>
+    <select id="height_type" name="height_type" >
+        <option value="px">px</option>
+        <option value="%">%</option>
+        <option value="ch">ch</option>
+        <option value="cm">cm</option>
+        <option value="em">em</option>
+        <option value="ex">ex</option>
+        <option value="gd">gd</option>
+        <option value="mm">mm</option>
+        <option value="pt">pt</option>
+        <option value="rem">rem</option>
+        <option value="vh">vh</option>
+      </select>
+    <button onclick="setHeight()">set height</button>
   </label>
+
 </div>
 </body>
 </html>
