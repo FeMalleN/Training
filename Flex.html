@@ -7,7 +7,8 @@
   <script src="scripts/script.js"></script>
 </head>
 <body>
-<div class="buttons_block">
+<div class="container_config">
+  <h3>Actions with container</h3>
   <div class="display_block">Display:
     <button onclick="withoutFlex()">
       without flex (default)
@@ -51,6 +52,8 @@
     <div class="flex_item item-9" onclick="getRandomColor('item-9')">9</div>
   </div>
 </div>
+<div class="item_config">
+  <h3>Actions with items</h3>
 <div class="sizes">
   <label>Width
     <input type="number" name="width" value="0" class="newWidth">
@@ -87,7 +90,7 @@
       </select>
     <button onclick="setHeight()">set height</button>
   </label>
-
+</div>
 </div>
 </body>
 </html>

@@ -3,10 +3,15 @@
 .block__container{
     margin:10px 0 10px 0;
     border: 5px solid firebrick;
+    gap: 10px;
  }
-.buttons_block *{
+h3{
+    margin: 0;
+}
+.container_config *{
     padding: 5px;
 }
+
 
 button{
     background: rgba(0, 0, 0, 0.25) 2px;
@@ -40,4 +45,6 @@ background-color: darkslateblue;
 .item-9{
     background-color: lightseagreen;
 }
-
+.newHeight,.newWidth{
+    margin:2px
+}
