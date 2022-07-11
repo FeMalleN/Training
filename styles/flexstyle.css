@@ -3,21 +3,24 @@
 .block__container{
     margin:10px 0 10px 0;
     border: 5px solid firebrick;
-    gap: 10px;
  }
 h3{
     margin: 0;
 }
 .container_config *{
-    padding: 5px;
+   padding: 5px;
 }
 
+.container_config hr {
+    padding: 0;
+}
 
 button{
     background: rgba(0, 0, 0, 0.25) 2px;
     border: aliceblue;
     box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 6px 6px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
+
 .item-1{
 background-color: darkslateblue;
 }

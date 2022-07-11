@@ -38,6 +38,12 @@ function wrp_reverse(){
     console.log("wrp-reverse")
 }
 //Sizes and colours
+function setGap(){
+    let newGap=document.getElementsByClassName('newGap')[0].value
+    console.log(newGap)
+    let exit=document.getElementsByClassName('block__container')[0].style.gap=newGap+'px'
+    console.log(exit)
+}
 function setWidth(){
     let newWidth=document.getElementsByClassName("newWidth")[0].value
     let elements=  document.getElementsByClassName('flex_item')
