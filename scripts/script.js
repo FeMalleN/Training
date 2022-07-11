@@ -40,9 +40,10 @@ function wrp_reverse(){
 //Sizes and colours
 function setGap(){
     let newGap=document.getElementsByClassName('newGap')[0].value
-    console.log(newGap)
-    let exit=document.getElementsByClassName('block__container')[0].style.gap=newGap+'px'
-    console.log(exit)
+    let select=document.getElementById('gap_type')
+    let type=select.options[select.selectedIndex].label
+    document.getElementsByClassName('block__container')[0].style.gap=newGap+type
+
 }
 function setWidth(){
     let newWidth=document.getElementsByClassName("newWidth")[0].value
