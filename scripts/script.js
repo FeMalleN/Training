@@ -65,12 +65,22 @@ function setHeight(){
     }
 }
 
-function getRandomColor(i) {
-    let letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+function getRandomGradient(i) {
+    let random=Math.round(Math.random()*(5-2+1)+2)
+    let background='linear-gradient(to left,'
+    for (let j = 1; j <=random; j++) {
+        background+=colorGeneration()+', '
     }
-    document.getElementsByClassName(i)[0].style.backgroundColor=color
-    console.log("set color "+ color+" for "+ i)
+    background=background.slice(0,-2)+')'
+    document.getElementsByClassName(i)[0].style.background=background
+}
+
+ function colorGeneration() {
+     let letters = '0123456789ABCDEF';
+     let color = '#';
+     for (let i = 0; i < 6; i++) {
+         color += letters[Math.floor(Math.random() * 16)];
+     }
+     return color
  }
+
