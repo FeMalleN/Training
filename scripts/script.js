@@ -1,14 +1,8 @@
 let block=document.getElementsByClassName('block__container');
 
 //displays
-function withoutFlex(){
-block[0].style.display='block'
-}
-function withFlex(){
-block[0].style.display='flex'
-}
-function inlineFlex(){
-    block[0].style.display='inline-flex'
+function display_set(i) {
+    block[0].style.display=i
 }
 
 //directions
@@ -54,6 +48,13 @@ function justSpAround(){
 }
 function justSpEvenly(){
     block[0].style.justifyContent="space-evenly"
+}
+
+function align_self(i) {
+    let select=document.getElementById('selected_item')
+    let elem=select.options[select.selectedIndex].value
+    console.log(elem)
+    document.getElementsByClassName(elem)[0].style.alignSelf=i
 }
 
 //Sizes and colors
@@ -119,12 +120,6 @@ function getRandomGradient(i) {
 
  //others
 function checkNull(i) {
-    return (i<0)? true:false
+    return (i < 0)
 }
 
-function align_self(i) {
-    let select=document.getElementById('selected_item')
-    let elem=select.options[select.selectedIndex].value
-    console.log(elem)
-    document.getElementsByClassName(elem)[0].style.alignSelf=i
-}
