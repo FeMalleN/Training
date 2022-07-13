@@ -37,7 +37,7 @@ function wrp_reverse(){
     document.getElementsByClassName('block__container')[0].style.flexWrap='wrap-reverse'
     console.log("wrp-reverse")
 }
-//Sizes and colours
+//Sizes and colors
 function setGap(){
     let newGap=document.getElementsByClassName('newGap')[0].value
     let select=document.getElementById('gap_type')
@@ -47,7 +47,7 @@ function setGap(){
 }
 function setWidth(){
     let newWidth=document.getElementsByClassName("newWidth")[0].value
-    let elements=  document.getElementsByClassName('flex_item')
+    let elements= document.getElementsByClassName('flex_item')
     let select=document.getElementById('width_type')
     let type=select.options[select.selectedIndex].label
     for (let i = 0; i < elements.length; i++) {
@@ -66,13 +66,14 @@ function setHeight(){
 }
 
 function getRandomGradient(i) {
+    let classElmnt=i.className
     let random=Math.round(Math.random()*(5-2+1)+2)
     let background='linear-gradient(to left,'
     for (let j = 1; j <=random; j++) {
         background+=colorGeneration()+', '
     }
     background=background.slice(0,-2)+')'
-    document.getElementsByClassName(i)[0].style.background=background
+      document.getElementsByClassName(classElmnt)[0].style.background=background
 }
 
  function colorGeneration() {
