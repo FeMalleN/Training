@@ -107,6 +107,26 @@
   </div>
 <div class="container__config">
   <h3>Actions with items</h3>
+
+  <div class="aligment_block">
+    Alignment: align-self
+    <div class="button_block">
+      <label> Check item
+        <select id="selected_item" name="selected_item" class="fl_items" >
+        </select>
+        <button onclick="align_self('flex-start')">
+          start
+        </button>
+        <button onclick="align_self('flex-end')">
+          end
+        </button>
+        <button onclick="align_self('center')">
+          center
+        </button>
+      </label>
+
+    </div>
+  </div>
   Sizes:
 <div class="sizes">
     <label>Width
@@ -125,6 +145,7 @@
 </div>
 <script>
   includeOptions()
+  includeItems()
 </script>
 </body>
 </html>

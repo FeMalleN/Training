@@ -121,3 +121,10 @@ function getRandomGradient(i) {
 function checkNull(i) {
     return (i<0)? true:false
 }
+
+function align_self(i) {
+    let select=document.getElementById('selected_item')
+    let elem=select.options[select.selectedIndex].value
+    console.log(elem)
+    document.getElementsByClassName(elem)[0].style.alignSelf=i
+}
