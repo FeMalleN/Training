@@ -46,6 +46,7 @@ function setGap(){
 
 }
 function setWidth(){
+
     let newWidth=document.getElementsByClassName("newWidth")[0].value
     let elements= document.getElementsByClassName('flex_item')
     let select=document.getElementById('width_type')
