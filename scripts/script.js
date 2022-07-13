@@ -27,15 +27,12 @@ function columnRev(){
 // wraps
 function wrp(){
     document.getElementsByClassName('block__container')[0].style.flexWrap="wrap"
-    console.log("wrp")
 }
 function nowrp(){
     document.getElementsByClassName('block__container')[0].style.flexWrap='nowrap'
-    console.log("nowrp")
 }
 function wrp_reverse(){
     document.getElementsByClassName('block__container')[0].style.flexWrap='wrap-reverse'
-    console.log("wrp-reverse")
 }
 //Sizes and colors
 function setGap(){
@@ -46,8 +43,7 @@ function setGap(){
 
 }
 function setWidth(i,a){
-    console.log(i)
-    let newWidth=document.getElementsByClassName("newWidth")[a].value
+     let newWidth=document.getElementsByClassName("newWidth")[a].value
     let elements= document.getElementsByClassName(i)
     let select=document.getElementById('width_type')
     let type=select.options[select.selectedIndex].label
