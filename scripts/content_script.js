@@ -3,18 +3,18 @@ function includeOptions(){
     "px",
     "%",
     "ch",
-    "cm",
-    "em",
-    "ex",
-    "gd",
-    "mm",
-    "pt",
-    "rem",
-    "vh"
+        "cm",
+        "em",
+        "ex",
+        "gd",
+        "mm",
+        "pt",
+        "rem",
+        "vh"
     ]
-  let min=0,
-      max=options.length-1,
-    select=document.getElementsByClassName('types');
+    let min = 0,
+        max = options.length,
+        select = document.getElementsByClassName('types');
     [].forEach.call(select,function (select) {
         for (let i = min; i <max; i++) {
         let opt=document.createElement('option');
