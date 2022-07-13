@@ -6,17 +6,8 @@ function display_set(i) {
 }
 
 //directions
-function row() {
-block[0].style.flexDirection='row'
-}
-function rowRev() {
-block[0].style.flexDirection='row-reverse'
-}
-function column(){
-block[0].style.flexDirection='column'
-}
-function columnRev(){
-block[0].style.flexDirection='column-reverse'
+function direction_set(i) {
+    block[0].style.flexDirection=i
 }
 
 // wraps
