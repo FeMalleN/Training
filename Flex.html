@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Flex</title>
   <link rel="stylesheet" href="styles/flexstyle.css">
+
   <script src="scripts/script.js"></script>
   <script src="scripts/content_script.js"></script>
 </head>
@@ -54,11 +55,20 @@
       <button onclick="justifyContent_set('flex-start')">
         flex-start (default)
       </button>
+      <button onclick="justifyContent_set('stretch')">
+        stretch
+      </button>
       <button onclick="justifyContent_set('center')">
         center
       </button>
       <button onclick="justifyContent_set('flex-end')">
        flex-end
+      </button>
+      <button onclick="justifyContent_set('left')">
+        left
+      </button>
+      <button onclick="justifyContent_set('right')">
+        right
       </button>
       <button onclick="justifyContent_set('space-between')">
         space-between
@@ -69,6 +79,12 @@
       <button onclick="justifyContent_set('space-evenly')">
        space-evenly
       </button>
+      <button onclick="justifyContent_set('safe center')">
+        safe center
+      </button>
+      <button onclick="justifyContent_set('unsafe center')">
+        unsafe center
+      </button>
     </div>
   </div>
   <hr>
@@ -77,10 +93,11 @@
     <div class="button_block">
       <label>Width
         <input type="number" name="width" placeholder="Value less than 0 for default value" class="newWidth">
-        <select id="block_width" name="" class="types" >
+        <select id="block_width" name="block_width" class="types" >
         </select>
         <button onclick="setWidth('block__container',0)">set width</button>
       </label>
+
       <label> Height
         <input type="number" name ="height" placeholder="Value less than 0 for default value" class="newHeight">
         <select id="block_height" name="" class="types" >
@@ -118,18 +135,36 @@
         <select id="selected_item" name="selected_item" class="fl_items" >
         </select>
         <button onclick="align_self('flex-start')">
-          start
+          flex-start
         </button>
         <button onclick="align_self('flex-end')">
-          end
+          flex-end
         </button>
         <button onclick="align_self('center')">
           center
         </button>
+        <button onclick="align_self('stretch')">
+          stretch
+        </button>
+        <button onclick="align_self('auto')">
+          auto
+        </button>
+        <button onclick="align_self('start')">
+          start
+        </button>
+        <button onclick="align_self('end')">
+          end
+        </button>
+        <button onclick="align_self('self-start')">
+          self-start
+        </button>
+        <button onclick="align_self('self-end')">
+          self-end
+        </button>
       </label>
-
     </div>
   </div>
+  <hr>
   Sizes:
 <div class="sizes">
     <label>Width

@@ -1,3 +1,4 @@
+
 let block=document.getElementsByClassName('block__container');
 
 //displays
@@ -54,7 +55,7 @@ function setWidth(i,a){
 }}
 function setHeight(i,a){
     let newHeight=document.getElementsByClassName("newHeight")[a].value
-    let elements=  document.getElementsByClassName(i)
+    let elements=document.getElementsByClassName(i)
     if (checkNull(newHeight)){
         for (let i = 0; i < elements.length; i++) {
         elements[i].style.height=null
