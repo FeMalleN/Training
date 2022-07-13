@@ -49,7 +49,18 @@
   <div class="sizes">
     Sizes:
     <div class="button_block">
-
+      <label>Width
+        <input type="number" name="width" value="0" class="newWidth">
+        <select id="block_width" name="" class="types" >
+        </select>
+        <button onclick="setWidth('block__container',0)">set width</button>
+      </label>
+      <label> Height
+        <input type="number" name ="height" value="0" class="newHeight">
+        <select id="block_height" name="" class="types" >
+        </select>
+        <button onclick="setHeight('block__container',0)">set height</button>
+      </label>
 
       <label>Gap
         <input type="number" name="gap" value="0" class="newGap">
@@ -60,7 +71,7 @@
     </div>
   </div>
 </div>
-  <div class="block__container">
+<div class="block__container">
     <div class="item-1 flex_item" onclick="getRandomGradient(this)">1</div>
     <div class="item-2 flex_item" onclick="getRandomGradient(this)">2</div>
     <div class="item-3 flex_item" onclick="getRandomGradient(this)">3</div>
@@ -71,7 +82,6 @@
     <div class="item-8 flex_item" onclick="getRandomGradient(this)">8</div>
     <div class="item-9 flex_item" onclick="getRandomGradient(this)">9</div>
   </div>
-
 <div class="item_config">
   <h3>Actions with items</h3>
 <div class="sizes">
@@ -79,13 +89,13 @@
     <input type="number" name="width" value="0" class="newWidth">
       <select id="width_type" name="width_type" class="types" >
       </select>
-      <button onclick="setWidth()">set width</button>
+      <button onclick="setWidth('flex_item',1)">set width</button>
   </label>
   <label> Height
   <input type="number" name ="height" value="0" class="newHeight">
     <select id="height_type" name="height_type" class="types" >
            </select>
-    <button onclick="setHeight()">set height</button>
+    <button onclick="setHeight('flex_item',1)">set height</button>
   </label>
 </div>
 </div>

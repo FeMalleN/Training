@@ -45,10 +45,10 @@ function setGap(){
     document.getElementsByClassName('block__container')[0].style.gap=newGap+type
 
 }
-function setWidth(){
-
-    let newWidth=document.getElementsByClassName("newWidth")[0].value
-    let elements= document.getElementsByClassName('flex_item')
+function setWidth(i,a){
+    console.log(i)
+    let newWidth=document.getElementsByClassName("newWidth")[a].value
+    let elements= document.getElementsByClassName(i)
     let select=document.getElementById('width_type')
     let type=select.options[select.selectedIndex].label
     for (let i = 0; i < elements.length; i++) {
@@ -56,9 +56,9 @@ function setWidth(){
     }
 }
 
-function setHeight(){
-    let newHeight=document.getElementsByClassName("newHeight")[0].value
-    let elements=  document.getElementsByClassName('flex_item')
+function setHeight(i,a){
+    let newHeight=document.getElementsByClassName("newHeight")[a].value
+    let elements=  document.getElementsByClassName(i)
     let select=document.getElementById('height_type')
     let type=select.options[select.selectedIndex].label
     for (let i = 0; i < elements.length; i++) {
