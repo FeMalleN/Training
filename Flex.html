@@ -20,6 +20,7 @@
       <button onclick="display_set('inline-flex')">inline-flex</button>
     </div>
   </div>
+
   <div class="direction_block">
     Direction:
     <div class="button_block">
@@ -37,33 +38,35 @@
     </button>
     </div>
   </div>
+
   <div class="wrap_block">
     Wrap:
     <div class="button_block">
-    <button onclick="nowrp()">nowrap (default)</button>
-    <button onclick="wrp()">wrap</button>
-    <button onclick="wrp_reverse()">wrap-reverse</button>
+    <button onclick="wrap_set('nowrap')">nowrap (default)</button>
+    <button onclick="wrap_set('wrap')">wrap</button>
+    <button onclick="wrap_set('wrap-reverse')">wrap-reverse</button>
   </div>
   </div>
-  <div class="aligment_block">
+
+  <div class="alignment_block">
     Alignment: justify-content
     <div class="button_block">
-      <button onclick="justStart()">
+      <button onclick="justifyContent_set('flex-start')">
         flex-start (default)
       </button>
-      <button onclick="justCenter()">
+      <button onclick="justifyContent_set('center')">
         center
       </button>
-      <button onclick="justEnd()">
+      <button onclick="justifyContent_set('flex-end')">
        flex-end
       </button>
-      <button onclick="justSpBetween()">
+      <button onclick="justifyContent_set('space-between')">
         space-between
       </button>
-      <button onclick="justSpAround()">
+      <button onclick="justifyContent_set('space-around')">
         space-around
       </button>
-      <button onclick="justSpEvenly()">
+      <button onclick="justifyContent_set('space-evenly')">
        space-evenly
       </button>
     </div>

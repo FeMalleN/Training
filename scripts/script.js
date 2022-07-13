@@ -10,35 +10,13 @@ function direction_set(i) {
     block[0].style.flexDirection=i
 }
 
-// wraps
-function wrp(){
-block[0].style.flexWrap="wrap"
-}
-function nowrp(){
-block[0].style.flexWrap='nowrap'
-}
-function wrp_reverse(){
-block[0].style.flexWrap='wrap-reverse'
+function wrap_set(i) {
+    block[0].style.flexWrap=i
 }
 
 //Alignments
-function justStart(){
-     block[0].style.justifyContent='flex-start'
-}
-function justEnd(){
-    block[0].style.justifyContent='flex-end'
-}
-function justCenter(){
-    block[0].style.justifyContent='center'
-}
-function justSpBetween(){
-    block[0].style.justifyContent="space-between"
-}
-function justSpAround(){
-    block[0].style.justifyContent="space-around"
-}
-function justSpEvenly(){
-    block[0].style.justifyContent="space-evenly"
+function justifyContent_set(i) {
+    block[0].style.justifyContent=i
 }
 
 function align_self(i) {
