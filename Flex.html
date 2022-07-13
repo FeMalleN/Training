@@ -5,6 +5,7 @@
     <title>Flex</title>
   <link rel="stylesheet" href="styles/flexstyle.css">
   <script src="scripts/script.js"></script>
+  <script src="scripts/content_script.js"></script>
 </head>
 <body>
 
@@ -50,18 +51,7 @@
     <div class="button_block">
       <label>Gap
         <input type="number" name="gap" value="0" class="newGap">
-        <select id="gap_type" name="gap_type" >
-          <option value="px">px</option>
-          <option value="%">%</option>
-          <option value="ch">ch</option>
-          <option value="cm">cm</option>
-          <option value="em">em</option>
-          <option value="ex">ex</option>
-          <option value="gd">gd</option>
-          <option value="mm">mm</option>
-          <option value="pt">pt</option>
-          <option value="rem">rem</option>
-          <option value="vh">vh</option>
+        <select id="gap_type" name="gap_type" class="types" >
         </select>
       <button onclick="setGap()">set Gap</button>
         </label>
@@ -85,40 +75,20 @@
 <div class="sizes">
   <label>Width
     <input type="number" name="width" value="0" class="newWidth">
-      <select id="width_type" name="width_type" >
-        <option value="px">px</option>
-        <option value="%">%</option>
-        <option value="ch">ch</option>
-        <option value="cm">cm</option>
-        <option value="em">em</option>
-        <option value="ex">ex</option>
-        <option value="gd">gd</option>
-        <option value="mm">mm</option>
-        <option value="pt">pt</option>
-        <option value="rem">rem</option>
-        <option value="vh">vh</option>
+      <select id="width_type" name="width_type" class="types" >
       </select>
       <button onclick="setWidth()">set width</button>
   </label>
-
   <label> Height
   <input type="number" name ="height" value="0" class="newHeight">
-    <select id="height_type" name="height_type" >
-        <option value="px">px</option>
-        <option value="%">%</option>
-        <option value="ch">ch</option>
-        <option value="cm">cm</option>
-        <option value="em">em</option>
-        <option value="ex">ex</option>
-        <option value="gd">gd</option>
-        <option value="mm">mm</option>
-        <option value="pt">pt</option>
-        <option value="rem">rem</option>
-        <option value="vh">vh</option>
-      </select>
+    <select id="height_type" name="height_type" class="types" >
+           </select>
     <button onclick="setHeight()">set height</button>
   </label>
 </div>
 </div>
+<script>
+  includeOptions()
+</script>
 </body>
 </html>
