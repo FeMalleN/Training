@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container_config">
+<div class="container__config">
   <h3>Actions with container</h3>
   <div class="display_block">Display:
     <div class="button_block">
@@ -45,25 +45,48 @@
     <button onclick="wrp_reverse()">wrap-reverse</button>
   </div>
   </div>
+  <div class="aligment_block">
+    Alignment: justify-content
+    <div class="button_block">
+      <button onclick="justStart()">
+        flex-start (default)
+      </button>
+      <button onclick="justCenter()">
+        center
+      </button>
+      <button onclick="justEnd()">
+       flex-end
+      </button>
+      <button onclick="justSpBetween()">
+        space-between
+      </button>
+      <button onclick="justSpAround()">
+        space-around
+      </button>
+      <button onclick="justSpEvenly()">
+       space-evenly
+      </button>
+    </div>
+  </div>
   <hr>
   <div class="sizes">
     Sizes:
     <div class="button_block">
       <label>Width
-        <input type="number" name="width" value="0" class="newWidth">
+        <input type="number" name="width" placeholder="Value less than 0 for default value" class="newWidth">
         <select id="block_width" name="" class="types" >
         </select>
         <button onclick="setWidth('block__container',0)">set width</button>
       </label>
       <label> Height
-        <input type="number" name ="height" value="0" class="newHeight">
+        <input type="number" name ="height" placeholder="Value less than 0 for default value" class="newHeight">
         <select id="block_height" name="" class="types" >
         </select>
         <button onclick="setHeight('block__container',0)">set height</button>
       </label>
 
       <label>Gap
-        <input type="number" name="gap" value="0" class="newGap">
+        <input type="number" name="gap" placeholder="Value less than 0 for default value" class="newGap">
         <select id="gap_type" name="gap_type" class="types" >
         </select>
       <button onclick="setGap()">set Gap</button>
@@ -82,17 +105,18 @@
     <div class="item-8 flex_item" onclick="getRandomGradient(this)">8</div>
     <div class="item-9 flex_item" onclick="getRandomGradient(this)">9</div>
   </div>
-<div class="item_config">
+<div class="container__config">
   <h3>Actions with items</h3>
+  Sizes:
 <div class="sizes">
-  <label>Width
-    <input type="number" name="width" value="0" class="newWidth">
+    <label>Width
+    <input type="number" name="width" class="newWidth" placeholder="Value less than 0 for default value">
       <select id="width_type" name="width_type" class="types" >
       </select>
       <button onclick="setWidth('flex_item',1)">set width</button>
   </label>
   <label> Height
-  <input type="number" name ="height" value="0" class="newHeight">
+  <input type="number" name ="height" placeholder="Value less than 0 for default value" class="newHeight" >
     <select id="height_type" name="height_type" class="types" >
            </select>
     <button onclick="setHeight('flex_item',1)">set height</button>
