@@ -17,6 +17,7 @@ h3 {
 }
 
 button {
+    margin-bottom: 5px;
     background: white;
     border: aliceblue;
     border-radius: 10px;
