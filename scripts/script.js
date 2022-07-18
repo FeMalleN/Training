@@ -121,3 +121,8 @@ function checkBasis() {
         document.getElementsByClassName('newRate')[0].style.display = 'none'
     }
 }
+
+function setOrder() {
+
+
+}
