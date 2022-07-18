@@ -55,5 +55,8 @@ background-color: darkslateblue;
     margin:2px
 }
 
+#basis_type {
+    display: none;
+}
 
 

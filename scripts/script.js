@@ -99,7 +99,7 @@ function setRates() {
             document.getElementsByClassName(nameItem)[0].style.flexGrow = sizeRate
             break;
         case 'flexBasis':
-            document.getElementsByClassName(nameItem)[0].style.flexBasis = sizeRate
+            document.getElementsByClassName(nameItem)[0].style.flexBasis = document.getElementsByClassName('basis_type')[0].value
             break;
         case 'flexShrink':
             document.getElementsByClassName(nameItem)[0].style.flexShrink = sizeRate
@@ -112,3 +112,12 @@ function checkNull(i) {
     return (i < 0)
 }
 
+function checkBasis() {
+    if (document.getElementsByClassName("fl_rates")[0].value !== 'flexBasis') {
+        document.getElementById('basis_type').style.display = 'none'
+        document.getElementsByClassName('newRate')[0].style.display = 'inline'
+    } else {
+        document.getElementById('basis_type').style.display = 'inline'
+        document.getElementsByClassName('newRate')[0].style.display = 'none'
+    }
+}

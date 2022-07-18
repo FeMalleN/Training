@@ -182,11 +182,12 @@
         </label>
         <div class="rates">
             <label> Rates
-                <select class="fl_rates">
+                <select class="fl_rates" onchange="checkBasis()">
                 </select>
                 <select class="fl_items">
                 </select>
                 <input class="newRate" name="" placeholder="Value 0 and less for default value" type="number">
+                <select class="basis_type" id="basis_type" name="basis_type"> </select>
                 <button onclick="setRates()">
                     setRate
                 </button>
@@ -199,6 +200,7 @@
     includeOptions()
     includeItems()
     includeRates()
+    basisOptions()
 </script>
 </body>
 </html>

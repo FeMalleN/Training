@@ -57,3 +57,20 @@ function includeRates() {
         }
     })
 }
+
+function basisOptions() {
+    let bassOpt = [
+        '30%', '50%', 'content', '150px', '220px'
+    ]
+    let min = 0,
+        max = bassOpt.length,
+        select = document.getElementsByClassName('basis_type');
+    [].forEach.call(select, function (select) {
+        for (let i = min; i < max; i++) {
+            let opt = document.createElement('option');
+            opt.value = bassOpt[i];
+            opt.innerHTML = bassOpt[i];
+            select.appendChild(opt);
+        }
+    })
+}
