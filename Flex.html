@@ -3,116 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Flex</title>
-  <link rel="stylesheet" href="styles/flexstyle.css">
+    <link href="styles/flexstyle.css" rel="stylesheet">
 
-  <script src="scripts/script.js"></script>
-  <script src="scripts/content_script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/content_script.js"></script>
 </head>
 <body>
 
 <div class="container__config">
-  <h3>Actions with container</h3>
-  <div class="display_block">Display:
-    <div class="button_block">
-      <button onclick="display_set('block')">
-        without flex (default)
-      </button>
-      <button onclick="display_set('flex')">flex</button>
-      <button onclick="display_set('inline-flex')">inline-flex</button>
+    <h3>Actions with container</h3>
+    <div class="display_block">Display:
+        <div class="button_block">
+            <button onclick="display_set('block')">
+                without flex (default)
+            </button>
+            <button onclick="display_set('flex')">flex</button>
+            <button onclick="display_set('inline-flex')">inline-flex</button>
+        </div>
     </div>
-  </div>
 
-  <div class="direction_block">
-    Direction:
-    <div class="button_block">
-    <button onclick="direction_set('row')">
-      row (default)
-    </button>
-    <button onclick="direction_set('row-reverse')">
-      row-reverse
-    </button>
-    <button onclick="direction_set('column')">
-      column
-    </button>
-    <button onclick="direction_set('column-reverse')">
-      column-reverse
-    </button>
+    <div class="direction_block">
+        Direction:
+        <div class="button_block">
+            <button onclick="direction_set('row')">
+                row (default)
+            </button>
+            <button onclick="direction_set('row-reverse')">
+                row-reverse
+            </button>
+            <button onclick="direction_set('column')">
+                column
+            </button>
+            <button onclick="direction_set('column-reverse')">
+                column-reverse
+            </button>
+        </div>
     </div>
-  </div>
 
-  <div class="wrap_block">
-    Wrap:
-    <div class="button_block">
-    <button onclick="wrap_set('nowrap')">nowrap (default)</button>
-    <button onclick="wrap_set('wrap')">wrap</button>
-    <button onclick="wrap_set('wrap-reverse')">wrap-reverse</button>
-  </div>
-  </div>
-
-  <div class="alignment_block">
-    Alignment: justify-content
-    <div class="button_block">
-      <button onclick="justifyContent_set('flex-start')">
-        flex-start (default)
-      </button>
-      <button onclick="justifyContent_set('stretch')">
-        stretch
-      </button>
-      <button onclick="justifyContent_set('center')">
-        center
-      </button>
-      <button onclick="justifyContent_set('flex-end')">
-       flex-end
-      </button>
-      <button onclick="justifyContent_set('left')">
-        left
-      </button>
-      <button onclick="justifyContent_set('right')">
-        right
-      </button>
-      <button onclick="justifyContent_set('space-between')">
-        space-between
-      </button>
-      <button onclick="justifyContent_set('space-around')">
-        space-around
-      </button>
-      <button onclick="justifyContent_set('space-evenly')">
-       space-evenly
-      </button>
-      <button onclick="justifyContent_set('safe center')">
-        safe center
-      </button>
-      <button onclick="justifyContent_set('unsafe center')">
-        unsafe center
-      </button>
+    <div class="wrap_block">
+        Wrap:
+        <div class="button_block">
+            <button onclick="wrap_set('nowrap')">nowrap (default)</button>
+            <button onclick="wrap_set('wrap')">wrap</button>
+            <button onclick="wrap_set('wrap-reverse')">wrap-reverse</button>
+        </div>
     </div>
-  </div>
-  <hr>
-  <div class="sizes">
-    Sizes:
-    <div class="button_block">
-      <label>Width
-        <input type="number" name="width" placeholder="Value less than 0 for default value" class="newWidth">
-        <select id="block_width" name="block_width" class="types" >
-        </select>
-        <button onclick="setWidth('block__container',0)">set width</button>
-      </label>
 
-      <label> Height
-        <input type="number" name ="height" placeholder="Value less than 0 for default value" class="newHeight">
-        <select id="block_height" name="" class="types" >
-        </select>
-        <button onclick="setHeight('block__container',0)">set height</button>
-      </label>
-
-      <label>Gap
-        <input type="number" name="gap" placeholder="Value less than 0 for default value" class="newGap">
-        <select id="gap_type" name="gap_type" class="types" >
-        </select>
-      <button onclick="setGap()">set Gap</button>
-        </label>
+    <div class="alignment_block">
+        Alignment: justify-content
+        <div class="button_block">
+            <button onclick="justifyContent_set('flex-start')">
+                flex-start (default)
+            </button>
+            <button onclick="justifyContent_set('stretch')">
+                stretch
+            </button>
+            <button onclick="justifyContent_set('center')">
+                center
+            </button>
+            <button onclick="justifyContent_set('flex-end')">
+                flex-end
+            </button>
+            <button onclick="justifyContent_set('left')">
+                left
+            </button>
+            <button onclick="justifyContent_set('right')">
+                right
+            </button>
+            <button onclick="justifyContent_set('space-between')">
+                space-between
+            </button>
+            <button onclick="justifyContent_set('space-around')">
+                space-around
+            </button>
+            <button onclick="justifyContent_set('space-evenly')">
+                space-evenly
+            </button>
+            <button onclick="justifyContent_set('safe center')">
+                safe center
+            </button>
+            <button onclick="justifyContent_set('unsafe center')">
+                unsafe center
+            </button>
+        </div>
     </div>
-  </div>
+    <hr>
+    <div class="sizes">
+        Sizes:
+        <div class="button_block">
+            <label>Width
+                <input class="newWidth" name="width" placeholder="Value less than 0 for default value" type="number">
+                <select class="types" id="block_width" name="block_width">
+                </select>
+                <button onclick="setWidth('block__container',0)">set width</button>
+            </label>
+
+            <label> Height
+                <input class="newHeight" name="height" placeholder="Value less than 0 for default value" type="number">
+                <select class="types" id="block_height" name="">
+                </select>
+                <button onclick="setHeight('block__container',0)">set height</button>
+            </label>
+
+            <label>Gap
+                <input class="newGap" name="gap" placeholder="Value less than 0 for default value" type="number">
+                <select class="types" id="gap_type" name="gap_type">
+                </select>
+                <button onclick="setGap()">set Gap</button>
+            </label>
+        </div>
+    </div>
 </div>
 <div class="block__container">
     <div class="item-1 flex_item" onclick="getRandomGradient(this)">1</div>
@@ -124,75 +124,81 @@
     <div class="item-7 flex_item" onclick="getRandomGradient(this)">7</div>
     <div class="item-8 flex_item" onclick="getRandomGradient(this)">8</div>
     <div class="item-9 flex_item" onclick="getRandomGradient(this)">9</div>
-  </div>
-<div class="container__config">
-  <h3>Actions with items</h3>
-
-  <div class="aligment_block">
-    Alignment: align-self
-    <div class="button_block">
-      <label> Check item
-        <select id="selected_item" name="selected_item" class="fl_items" >
-        </select>
-        <button onclick="align_self('flex-start')">
-          flex-start
-        </button>
-        <button onclick="align_self('flex-end')">
-          flex-end
-        </button>
-        <button onclick="align_self('center')">
-          center
-        </button>
-        <button onclick="align_self('stretch')">
-          stretch
-        </button>
-        <button onclick="align_self('auto')">
-          auto
-        </button>
-        <button onclick="align_self('start')">
-          start
-        </button>
-        <button onclick="align_self('end')">
-          end
-        </button>
-        <button onclick="align_self('self-start')">
-          self-start
-        </button>
-        <button onclick="align_self('self-end')">
-          self-end
-        </button>
-      </label>
-    </div>
-  </div>
-  <hr>
-  Sizes:
-<div class="sizes">
-    <label>Width
-    <input type="number" name="width" class="newWidth" placeholder="Value less than 0 for default value">
-      <select id="width_type" name="width_type" class="types" >
-      </select>
-      <button onclick="setWidth('flex_item',1)">set width</button>
-  </label>
-
-  <label> Height
-  <input type="number" name ="height" placeholder="Value less than 0 for default value" class="newHeight" >
-    <select id="height_type" name="height_type" class="types" >
-           </select>
-    <button onclick="setHeight('flex_item',1)">set height</button>
-  </label>
-<!-- -->
-  <label> Grow
-    <select id="" name="" class="fl_items" >
-    </select>
-    <input class="newGrow" name="height" placeholder="Value 0 and less for default value" type="number">
-    <button onclick="setGrow()">set grow</button>
-  </label>
-<!-- -->
 </div>
+<div class="container__config">
+    <h3>Actions with items</h3>
+
+    <div class="aligment_block">
+        Alignment: align-self
+        <div class="button_block">
+            <label> Check item
+                <select class="fl_items" id="selected_item" name="selected_item">
+                </select>
+                <button onclick="align_self('flex-start')">
+                    flex-start
+                </button>
+                <button onclick="align_self('flex-end')">
+                    flex-end
+                </button>
+                <button onclick="align_self('center')">
+                    center
+                </button>
+                <button onclick="align_self('stretch')">
+                    stretch
+                </button>
+                <button onclick="align_self('auto')">
+                    auto
+                </button>
+                <button onclick="align_self('start')">
+                    start
+                </button>
+                <button onclick="align_self('end')">
+                    end
+                </button>
+                <button onclick="align_self('self-start')">
+                    self-start
+                </button>
+                <button onclick="align_self('self-end')">
+                    self-end
+                </button>
+            </label>
+        </div>
+    </div>
+    <hr>
+    Sizes:
+    <div class="sizes">
+        <label>Width
+            <input class="newWidth" name="width" placeholder="Value less than 0 for default value" type="number">
+            <select class="types" id="width_type" name="width_type">
+            </select>
+            <button onclick="setWidth('flex_item',1)">set width</button>
+        </label>
+
+        <label> Height
+            <input class="newHeight" name="height" placeholder="Value less than 0 for default value" type="number">
+            <select class="types" id="height_type" name="height_type">
+            </select>
+            <button onclick="setHeight('flex_item',1)">set height</button>
+        </label>
+        <div class="rates">
+            <label> Rates
+                <select class="fl_rates">
+                </select>
+                <select class="fl_items">
+                </select>
+                <input class="newRate" name="" placeholder="Value 0 and less for default value" type="number">
+                <button onclick="setRates()">
+                    setRate
+                </button>
+            </label></div>
+
+
+    </div>
 </div>
 <script>
-  includeOptions()
-  includeItems()
+    includeOptions()
+    includeItems()
+    includeRates()
 </script>
 </body>
 </html>
