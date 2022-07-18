@@ -88,6 +88,13 @@ function getRandomGradient(i) {
      return color
  }
 
+function setGrow() {
+    let select = document.getElementsByClassName("fl_items")[1].value
+    let size = document.getElementsByClassName('newGrow')[0].value
+    if (checkNull(size)) size = 0
+    document.getElementsByClassName(select)[0].style.flexGrow = size
+}
+
  //others
 function checkNull(i) {
     return (i < 0)
