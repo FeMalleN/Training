@@ -1,9 +1,10 @@
 @import "normalize.css";
 
-.block__container{
+.block__container {
     margin: 10px 0 10px 0;
     border: 1px solid black;
 }
+
 h3 {
     margin: 0;
 }
@@ -24,39 +25,112 @@ button {
     box-shadow: rgba(0, 0, 0, 0.03) 0 54px 55px, rgba(0, 0, 0, 0.03) 0 -12px 30px, rgba(0, 0, 0, 0.03) 0 4px 6px, rgba(0, 0, 0, 0.03) 0 6px 6px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
-.item-1{
-background-color: darkslateblue;
+.item-1 {
+    background-color: darkslateblue;
 }
-.item-2{
+
+.item-2 {
     background-color: yellowgreen;
 }
-.item-3{
+
+.item-3 {
     background-color: antiquewhite;
 }
-.item-4{
+
+.item-4 {
     background-color: cyan;
 }
-.item-5{
+
+.item-5 {
     background-color: gold;
 }
-.item-6{
+
+.item-6 {
     background-color: darkgray;
 }
-.item-7{
+
+.item-7 {
     background-color: darkorange;
 }
-.item-8{
+
+.item-8 {
     background-color: plum;
 }
-.item-9{
+
+.item-9 {
     background-color: lightseagreen;
 }
-.newHeight,.newWidth{
-    margin:2px
+
+.newHeight, .newWidth {
+    margin: 2px
 }
 
 #basis_type {
     display: none;
 }
 
+.flex-container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+}
 
+.flex-item {
+    text-align: center;
+    color: ivory;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    flex: 1
+}
+
+section {
+    flex: 3
+}
+
+.item1 {
+    background: wheat;
+}
+
+.item2 {
+    background: grey;
+}
+
+.item3 {
+    background: coral;
+}
+
+.item4 {
+    background: chocolate;
+}
+
+.item5 {
+    background: indigo;
+}
+
+.itleft, .itright {
+    width: 60px;
+    text-align: center;
+    gap: 10px;
+    border: grey 1px solid;
+}
+
+.itleft {
+    background: yellow;
+}
+
+.itright {
+    background: coral;
+}
+
+.sideBars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
