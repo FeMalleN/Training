@@ -22,7 +22,6 @@ function justifyContent_set(i) {
 function align_self(i) {
     let select = document.getElementById('selected_item')
     let elem = select.options[select.selectedIndex].value
-    console.log(elem)
     document.getElementsByClassName(elem)[0].style.alignSelf = i
 }
 
@@ -123,6 +122,8 @@ function checkBasis() {
 }
 
 function setOrder() {
-
-
+    let elements = document.getElementsByClassName('flex_item')
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.order = Math.round(Math.random() * 100)
+    }
 }
