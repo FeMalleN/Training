@@ -50,8 +50,8 @@
     </div>
 
     <div class="alignment_block">
-        Alignment: justify-content(Горизонтально выравнивает элементы Flex, если элементы не используют все доступное
-        пространство на главной оси)
+        Alignment: <p>justify-content(Горизонтально выравнивает элементы Flex, если элементы не используют все доступное
+        пространство на главной оси)</p>
         <div class="button_block">
             <button onclick="justifyContent_set('flex-start')">
                 flex-start (default)
@@ -85,6 +85,25 @@
             </button>
             <button onclick="justifyContent_set('unsafe center')">
                 unsafe center
+            </button>
+        </div>
+        <p>align-items (Вертикально выравнивает элементы Flex, если элементы не используют все доступное
+            пространство на главной оси)</p>
+        <div class="button_block">
+            <button onclick="alignItems_set('stretch')">
+                stretch(default)
+            </button>
+            <button onclick="alignItems_set('center')">
+                center
+            </button>
+            <button onclick="alignItems_set('flex-start')">
+                flex-start
+            </button>
+            <button onclick="alignItems_set('flex-end')">
+                flex-end
+            </button>
+            <button onclick="alignItems_set('baseline')">
+                baseline
             </button>
         </div>
     </div>
@@ -182,7 +201,10 @@
             <button onclick="setHeight('flex_item',1)">set height</button>
         </label>
         <div class="rates">
-            <label> Rates
+            <label> Rates: <br>flex-grow (определяет как много свободного пространства во flex-контейнере должно быть
+                назначено текущему элементу)<br>
+                <br> flex-shrink(указывает степень сжатия)<br>
+                <br>flex-basis(указывает изначальную длинну элемента)<br>
                 <select class="fl_rates" onchange="checkBasis()">
                 </select>
                 <select class="fl_items">

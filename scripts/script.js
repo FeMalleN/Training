@@ -19,6 +19,10 @@ function justifyContent_set(i) {
     block[0].style.justifyContent = i
 }
 
+function alignItems_set(i) {
+    block[0].style.alignItems = i
+}
+
 function align_self(i) {
     let select = document.getElementById('selected_item')
     let elem = select.options[select.selectedIndex].value
