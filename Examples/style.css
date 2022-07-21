@@ -11,12 +11,11 @@ ul {
     margin: 0;
     padding: 0;
     -webkit-transition: 4s ease;
-
 }
 
 ul:hover {
     background: black;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 4s;
 }
 
@@ -40,4 +39,16 @@ a {
 a:hover {
     color: black;
     transition: 4s;
+}
+
+.ul_reverse {
+    flex-direction: row-reverse;
+}
+
+.ul_center {
+    justify-content: center;
+}
+
+.li_big {
+    flex-basis: auto;
 }
