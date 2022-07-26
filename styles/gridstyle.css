@@ -1,0 +1,45 @@
+.grid__body {
+    display: grid;
+    grid-template-columns: auto minmax(10px, 140px) fit-content(160px);
+    grid-template-rows:100px auto 100px;
+}
+
+.grid__item {
+    text-align: center;
+    border: 2px dashed skyblue;
+    padding: 15px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+            "header header header"
+            "side"
+            "content"
+            "side"
+            "footer";
+}
+
+.grid-wrapper * {
+    text-align: center;
+    border: blue 1px dashed;
+    padding: 5px;
+}
+
+.grid-header {
+    grid-area: header;
+}
+
+.grid-side {
+    grid-area: side;
+}
+
+.grid-content {
+    grid-area: content;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
