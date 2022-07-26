@@ -12,14 +12,12 @@
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas:
             "header header header"
-            "side"
-            "content"
-            "side"
-            "footer";
+            "lside content rside"
+            "footer footer footer";
 }
 
 .grid-wrapper * {
@@ -32,8 +30,11 @@
     grid-area: header;
 }
 
-.grid-side {
-    grid-area: side;
+.grid-lside {
+    grid-area: lside;
+}
+.grid-rside{
+    grid-area: rside;
 }
 
 .grid-content {
@@ -42,4 +43,29 @@
 
 .grid-footer {
     grid-area: footer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template:
+[start]"header header header" 100px [row2]
+[row2] "ls cont rs" 190px [row3]
+[row3] "foot foot foot" 160px / 1fr 5fr 1fr;
+}
+.grid-container *{
+    padding: 10px;
+    border: chartreuse 2px double;
+    text-align: center;
+}
+.grid-h{
+    grid-area: header;
+}
+.grid-ls{
+    grid-area: ls;
+}
+.grid-rs{
+    grid-area:rs;
+}
+.grid-foot{
+    grid-area: foot;
 }
